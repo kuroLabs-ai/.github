@@ -1,169 +1,185 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/kuroLabs-ai/KuroCodeAgent/main/assets/kuro_icon.png" width="150" height="150" alt="KuroLabs AI Mascot" />
+<img src="https://raw.githubusercontent.com/kuroLabs-ai/kuroLabs-ai.github.io/main/assets/favicon.png" alt="KuroLabs AI" width="120" />
 
-# ⚡ KuroLabs AI
-### *Autonomous System Intelligence • Self-Healing Software • Modular Agentic Ecosystems*
+# ⚡ KUROLABS AI
 
-[![Organization](https://img.shields.io/badge/org-kuroLabs--ai-00ffcc.svg?style=for-the-badge&logo=github)](https://github.com/kuroLabs-ai)
-[![Web Portal](https://img.shields.io/badge/portal-kurolabs--ai.github.io-38bdf8.svg?style=for-the-badge&logo=google-chrome)](https://kurolabs-ai.github.io)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Core Agent](https://img.shields.io/badge/agent-KuroCodeAgent%20v0.2.0-a855f7.svg?style=for-the-badge&logo=python)](https://github.com/kuroLabs-ai/KuroCodeAgent)
-[![Capability Hub](https://img.shields.io/badge/hub-kuroLabs--ai%2Fhub-fbbf24.svg?style=for-the-badge&logo=git)](https://github.com/kuroLabs-ai/hub)
-[![Security Gates](https://img.shields.io/badge/security-AST%20Guard%20%7C%20DPAPI%20Vault-ef4444.svg?style=for-the-badge)](https://github.com/kuroLabs-ai/KuroCodeAgent)
+### _Autonomous Intelligence • Local-First Architecture • Decentralized Ecosystems_
 
----
+[![Ecosystem](https://img.shields.io/badge/Ecosystem-KuroCode-7928CA?style=for-the-badge&logo=probot&logoColor=white)](https://github.com/kurolabs-ai)
+[![Live Portal](https://img.shields.io/badge/Web_Portal-kurolabs--ai.github.io-0070F3?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kurolabs-ai.github.io/)
+[![Capability Registry](https://img.shields.io/badge/Capability_Hub-kuroLabs--ai%2Fhub-10B981?style=for-the-badge&logo=pypi&logoColor=white)](https://github.com/kurolabs-ai/hub)
+[![Security Standard](https://img.shields.io/badge/Security-DPAPI_%2B_AST_Guard-EF4444?style=for-the-badge&logo=securityscorecard&logoColor=white)](https://github.com/kurolabs-ai/KuroCodeAgent)
+[![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
 
-**Architecting the open foundation for autonomous software engineering, verifiable runtime safety, and modular plug-and-play machine intelligence.**
+<br/>
 
-[**Explore Portal**](https://kurolabs-ai.github.io) • [**KuroCode Agent**](https://github.com/kuroLabs-ai/KuroCodeAgent) • [**Capability Hub**](https://github.com/kuroLabs-ai/hub) • [**Documentation**](https://github.com/kuroLabs-ai/KuroCodeAgent#readme)
+> **"We build AI agents with hands."**  
+> KuroLabs AI develops deterministic, local-first autonomous software agents that plan, compile code, execute shell operations, self-heal runtime failures, and hot-load modular capabilities on demand — all while keeping credentials and telemetry strictly on your machine.
+
+<br/>
+
+[Explore Web Portal](https://kurolabs-ai.github.io/) • [Architecture](#-ecosystem-architecture) • [Active Projects](#-project-ecosystem) • [Engineering Tenets](#-core-engineering-tenets) • [Roadmap](#-strategic-roadmap) • [Community](#-community--contributions)
 
 </div>
 
 ---
 
-## 🌌 About KuroLabs AI
+## 🌐 Vision & Mission
 
-**KuroLabs AI** is an open-source research and engineering collective dedicated to building **Level 2+ autonomous software systems**. 
+Most modern AI solutions stop at conversational text generation. **KuroLabs AI** bridges the gap between passive language models and active execution environments:
 
-Traditional AI assistants are passive conversational interfaces trapped in the browser. KuroLabs develops local-first, proactive agents capable of diagnosing their own execution errors, safeguarding operating system integrity, and evolving capabilities on the fly without human hand-holding.
-
-### 🏛️ Engineering Pillars
-
-| Pillar | Philosophy | Implementation |
-| :--- | :--- | :--- |
-| 🛡️ **Zero-Trust Safety** | Agents must never execute destructive code blindly. | Pre-execution **AST Syntax Inspector** intercepts dangerous syscalls, file wipes, and token anomalies before kernel execution. |
-| 🩺 **Autonomous Healing** | Runtime crashes should self-correct without user interruption. | Dedicated diagnosis loop with traceback parsing, sandboxed `pip` dependency resolution, and atomic **Git Checkpoint rollbacks**. |
-| 🧩 **Puzzle-Piece Modularity** | Tools and skills should be modular components, not monolithic code. | **Capability Market**: Decentralized registry where tools, plugins, skills, and integrations snap into agents hot at runtime. |
-| 🔒 **Local Data Sovereignty** | Your code and credentials belong to your hardware. | Encrypted **Windows DPAPI / Keyring Vaults**, offline local model orchestration via Ollama, and zero telemetry collection. |
+- **Local-First & Sovereign**: Intelligence running in your personal workspace, using OS-level encrypted vaults (Windows DPAPI / AES) with zero external credential leakage.
+- **Deterministic Action**: Every proposed change is rigorously checked through AST static analysis, syntax compilation (`py_compile`), and exit-code validation before execution.
+- **Resilient & Self-Repairing**: Autonomous diagnosis loops that detect missing libraries, syntax defects, or rate limits and repair them on the fly.
+- **Composable Extensibility**: A decentralized architecture that decouples core runtime logic from domain-specific tools and procedural routines.
 
 ---
 
-## 🚀 The KuroLabs Ecosystem
+## 🏛️ Ecosystem Architecture
+
+The KuroLabs ecosystem is organized into modular, interconnected layers:
 
 ```mermaid
 flowchart TD
-    User([👩‍💻 Developer / Engineer])
-    
-    subgraph Portal ["🌐 KuroLabs Portal (kurolabs-ai.github.io)"]
-        Builder["🧩 Interactive Rig Assembler"]
-        HealingDemo["🩺 Live Breakdown & Repair Lab"]
-        SetupGen["⚙️ 1-Click .env Setup Generator"]
+    subgraph Layer1 ["1. Programs (Autonomous Applications)"]
+        KuroCode["KuroCodeAgent\nAutonomous Desktop & Terminal Agent"]
+        Sentinel["KuroSentinel\nAST Security & Risk Inspector"]
+        Flow["KuroFlow\nMulti-Agent Workflow Orchestrator"]
     end
 
-    subgraph AgentCore ["⚡ KuroCodeAgent (kuroLabs-ai/KuroCodeAgent)"]
-        ReAct["🧠 ReAct 2.0 Autonomous Loop"]
-        Healer["🩺 Self-Healing Diagnostics Subsystem"]
-        AST["🛡️ AST Safety Sandbox Guard"]
-        Vault["🔒 DPAPI Encrypted Vault"]
-        Memory["💾 4-Layer Hybrid SQLite Memory"]
+    subgraph Layer2 ["2. Capability Hub (Decentralized Registry)"]
+        Catalog["catalog.json Master Index"]
+        Tools["tools/ (Single-file Python functions)"]
+        Plugins["plugins/ (Multi-file packages & manifests)"]
+        Skills["skills/ (Procedural SKILL.md routines)"]
     end
 
-    subgraph Hub ["🧩 Capability Hub (kuroLabs-ai/hub)"]
-        Tools["🔧 Standalone Python Tools"]
-        Plugins["🔌 Multi-file Plugins"]
-        Skills["📚 Procedural Workflows (SKILL.md)"]
-        Integs["🔗 Enterprise Integrations"]
+    subgraph Portal ["3. Public Web Layer"]
+        Website["kurolabs-ai.github.io\nLive Hub Browser • Rig Studio Assembler • Simulation Lab"]
     end
 
-    User -->|Deploys / Customizes| Portal
-    User -->|Interacts via Terminal / GUI| AgentCore
-    AgentCore -->|Hot-Installs / Snaps| Hub
-    Healer -->|Self-patches bugs & installs missing deps| AgentCore
-    AST -->|Validates code changes & safety| AgentCore
+    Layer2 -->|Modular Tools, Plugins & Skills| Layer1
+    Catalog -->|Discovered & showcased on| Website
 ```
 
----
+### 1. Programs (Autonomous Applications)
 
-## 📦 Core Repositories & Programs
+Self-contained, production-grade applications that solve engineering workflows. KuroLabs programs run locally, integrate directly with operating system APIs, and feature native terminal and GUI interfaces.
 
-### 1. [⚡ KuroCodeAgent](https://github.com/kuroLabs-ai/KuroCodeAgent)
-*The Flagship Local-First Autonomous System Engineer & Coding Companion.*
-- **Autonomous Evolution**: Generates and compiles its own tools when faced with new tasks.
-- **Multi-Model Router**: Seamless failover between **Google Gemini**, **Groq (Llama-3)**, **Ollama (100% Offline)**, and **OpenRouter**.
-- **AST Execution Guard**: Strict AST parsing blocks banned operations (`rmdir /s`, disk formatters, arbitrary token abuse).
-- **Encrypted Credential Vault**: Secures API tokens using OS-native hardware DPAPI encryption.
+### 2. Hub (Decentralized Capability Registry)
 
-### 2. [🧩 Capability Hub (`hub`)](https://github.com/kuroLabs-ai/hub)
-*The Decentralized Registry for Plug-and-Play Capabilities.*
-- **Clean File Separation**: Metadata resides in `catalog.json`; source code lives in standalone files (`tools/*.py`, `plugins/*/`, `skills/*/SKILL.md`).
-- **Zero-Restart Hot Reloading**: Snapping a tool or skill activates immediately inside active agent sessions.
-- **Branch-Aware Resolution**: Supports fetching from GitHub `main`, dev branches, or local offline worktrees.
-
-### 3. [🌐 Organization Web Portal (`kuroLabs-ai.github.io`)](https://kurolabs-ai.github.io)
-*Next-Gen Developer Interface & Interactive Laboratory.*
-- **100% Vanilla Tech Stack**: Pure HTML5, CSS3, and ES6 JavaScript with zero npm build dependencies.
-- **Agent Rig Assembler**: Interactive sandbox to snap pieces into runtime slots and generate custom CLI launch commands.
-- **Live Self-Healing Simulator**: Visual step-by-step breakdown and recovery animation.
-- **Web Audio Synthesizer**: Zero-footprint mathematical procedural sound generator.
+An open, version-controlled GitHub repository (`kurolabs-ai/hub`) acting as a decentralized marketplace. Developers across the globe contribute standalone tools, procedural skills, and plugins through pull requests to `catalog.json`.
 
 ---
 
-## ⚡ Quickstart
+## 🚀 Project Ecosystem
 
-Install and launch the flagship agent in under 60 seconds:
+### 💻 [`KuroCodeAgent`](https://github.com/kurolabs-ai/KuroCodeAgent) — _Flagship Autonomous Terminal Assistant_
+
+The flagship autonomous coding agent and operating system copilot engineered for developers who demand full control over their development environment.
+
+- **ReAct 2.0 Loop**: Deconstructs high-level objectives into structured multi-step plans with deterministic post-action verification.
+- **Provider Resilience**: Automatic zero-downtime cascading across Gemini, Groq, OpenRouter, OpenAI, and local Ollama instances with active API key pool rotation.
+- **Self-Healing Diagnostics**: Automatically categorizes runtime tracebacks across 10 distinct failure patterns, resolving issues via automated pip installations, directory reconstruction, or checkpoint rollbacks.
+- **Multimodal OS Perception**: Inspects monitors via screenshot vision, operates browsers with headless Playwright, streams live hardware telemetry, and bridges to Discord, Telegram, GitHub, and GitLab.
+- **Portable Distribution**: Compiles to standalone console binaries with zero required Python runtime on the host machine.
 
 ```bash
-# 1. Clone the agent repository
-git clone https://github.com/kuroLabs-ai/KuroCodeAgent.git
+# Clone and launch KuroCode
+git clone https://github.com/kurolabs-ai/KuroCodeAgent.git
 cd KuroCodeAgent
-
-# 2. Setup your virtual environment
-python -m venv venv
-# On Windows:
-.\venv\Scripts\activate
-# On Linux/macOS:
-source venv/bin/activate
-
-# 3. Install in development mode
 pip install -e .
-
-# 4. Launch KuroCode
 kuro
 ```
 
-### 🧩 1-Click Capability Snapping
+---
 
-Inside the KuroCode interactive terminal, install capabilities from the official Hub on the fly:
+### 🧩 [`hub`](https://github.com/kurolabs-ai/hub) — _Decentralized Capability Registry_
 
-```text
-kuro > /store list
-kuro > /store install json_inspector
-kuro > /store install tdd_refactoring
-kuro > /heal status
+The open community catalog hosting plug-and-play extensions ("puzzle pieces") for KuroCode agents.
+
+| Section          | Role                                          | Examples in Catalog                                              |
+| :--------------- | :-------------------------------------------- | :--------------------------------------------------------------- |
+| **`tools/`**     | Standalone deterministic Python functions     | `regex_tester.py`, `hash_calculator.py`, `currency_converter.py` |
+| **`plugins/`**   | Multi-file modular extensions with manifest   | `code_metrics/`, `dependency_guard/`                             |
+| **`skills/`**    | Procedural step-by-step routines (`SKILL.md`) | `tdd_refactoring/`, `security_audit/`                            |
+| **Integrations** | Declarative connectors for external platforms | `gitlab`, `slack`, `google_drive`                                |
+
+Direct terminal management inside KuroCode:
+
+```bash
+/store update                # Fetch latest catalog.json from GitHub
+/store search security       # Query tools and skills by keyword
+/store install regex_tester  # Download, AST-verify, and load capability
 ```
 
 ---
 
-## 🤝 Contributing to KuroLabs
+### 🌐 [`kuroLabs-ai.github.io`](https://github.com/kurolabs-ai/kuroLabs-ai.github.io) — _Official Web Portal & Interactive Lab_
 
-We welcome contributors from all backgrounds! You can help expand the ecosystem by:
+The public web portal and ecosystem explorer deployed live to [kurolabs-ai.github.io](https://kurolabs-ai.github.io/).
 
-1. **Submitting a New Puzzle Piece**: Add a tool, plugin, skill, or integration to [kuroLabs-ai/hub](https://github.com/kuroLabs-ai/hub) via Pull Request.
-2. **Improving Core Autonomy**: Contribute patches, new diagnostic rules, or model adapters to [kuroLabs-ai/KuroCodeAgent](https://github.com/kuroLabs-ai/KuroCodeAgent).
-3. **Enhancing Web Labs**: Build new interactive visualizers on [kuroLabs-ai/kurolabs-ai.github.io](https://kurolabs-ai.github.io).
-
-Please review our [Contribution Guide](https://github.com/kuroLabs-ai/hub#contributing-a-new-puzzle-piece) before submitting Pull Requests.
+- **Live Capability Explorer**: Search and filter community capabilities fetched directly from `kurolabs-ai/hub`.
+- **Rig Studio**: Interactive web assembler to configure agent models, capabilities, and security boundaries with instant JSON export.
+- **Simulation Lab**: In-browser sandbox environment simulating multi-step autonomous agent runs and healing cycles.
+- **Lightweight Architecture**: Zero-bundler stack crafted with semantic HTML5, Tailwind CSS, custom design tokens, and native ES modules.
 
 ---
 
-## 🔒 Security & Safe Autonomy
+## 🔒 Core Engineering Tenets
 
-KuroLabs AI enforces a **Safe Autonomy Mandate**:
-- All code modifications trigger automatic **Git Checkpoint commits** for 1-click atomic undo.
-- Destructive commands (`rm`, `format`, `del /f`) require explicit user confirmation unless overridden in developer mode.
-- Report any vulnerability directly via [GitHub Security Advisories](https://github.com/kuroLabs-ai/KuroCodeAgent/security).
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                      KUROLABS SECURITY & RELIABILITY                   │
+├────────────────────────────────────────────────────────────────────────┤
+│  🛡️  Zero-Telemetry Local Vault                                        │
+│      OS-native Windows DPAPI / CryptProtectData encryption ensures     │
+│      API credentials never exist in plaintext or leak to external logs.│
+│                                                                        │
+│  🛡️  Pre-Execution AST Guardrails                                      │
+│      Static Abstract Syntax Tree inspection prevents hazardous calls,   │
+│      banned system imports, and destructive shell execution strings.   │
+│                                                                        │
+│  🛡️  Deterministic Verification Gates                                  │
+│      Every file modification is verified with AST compiler checks      │
+│      and paired with automated Git stash checkpoints for instant /undo.│
+│                                                                        │
+│  🛡️  Decoupled Modularity                                              │
+│      Core agent engines remain minimal; domain features are isolated   │
+│      into standalone, audited puzzle pieces on the Capability Hub.     │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🗺️ Strategic Roadmap
+
+Tracking active development across KuroLabs programs and registries:
+
+- [x] **KuroCode Core Release (v0.2.0)**: ReAct 2.0 loop, multi-model cascading, DPAPI vault, SQLite episodic memory, and Store client.
+- [x] **Decentralized Capability Hub**: Standardized schema (`catalog.json`), hot-loading pipeline, and community tools/plugins/skills registry.
+
+---
+
+## 🤝 Community & Contributions
+
+The KuroLabs ecosystem thrives on open collaboration. Whether you are creating a new diagnostic tool, packaging an automation skill, or optimizing agent execution logic, your contributions are welcome:
+
+- **Submit a Capability**: Author a tool or workflow and open a PR against [`kurolabs-ai/hub`](https://github.com/kurolabs-ai/hub).
+- **Core Agent Contributions**: Submit issues and pull requests to [`kurolabs-ai/KuroCodeAgent`](https://github.com/kurolabs-ai/KuroCodeAgent).
+- **Portal Improvements**: Help enhance our web portal and developer documentation at [`kurolabs-ai/kuroLabs-ai.github.io`](https://github.com/kurolabs-ai/kuroLabs-ai.github.io).
 
 ---
 
 <div align="center">
 
-### 🌐 Connect With KuroLabs AI
+### ⚡ KuroLabs AI
 
-[![GitHub](https://img.shields.io/badge/GitHub-kuroLabs--ai-181717?style=for-the-badge&logo=github)](https://github.com/kuroLabs-ai)
-[![Portal](https://img.shields.io/badge/Portal-kurolabs--ai.github.io-00ffcc?style=for-the-badge&logo=google-chrome)](https://kurolabs-ai.github.io)
-[![Issues](https://img.shields.io/badge/Issues-KuroCodeAgent-red?style=for-the-badge&logo=github)](https://github.com/kuroLabs-ai/KuroCodeAgent/issues)
+_Building the Future of Autonomous, Local-First Software Engineering_
 
-*Maintained with 💜 by KuroLabs AI & the Open-Source Community.*
+[Web Portal](https://kurolabs-ai.github.io/) • [GitHub Organization](https://github.com/kurolabs-ai) • [Capability Hub](https://github.com/kurolabs-ai/hub)
+
+_Maintained by KuroLabs AI • Open-Source under the MIT License_
 
 </div>
